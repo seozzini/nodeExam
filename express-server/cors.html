@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      fetch('http://localhost:3000/info', {
+        method: 'post',
+        body: new URLSearchParams({ search: 'yedam' }),
+      })
+        .then((res) => res.text()) //서버에서 보낸 데이터가 단순 문자열이라서 text
+        .then((result) => console.log(result))
+        .catch((err) => console.log(err));
+    </script>
+  </body>
+</html>
