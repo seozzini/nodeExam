@@ -5,6 +5,7 @@ import DataBinding from '@/views/DataBinding.vue'; //@은 절대경로
 import ListBinding from '@/views/ListBinding.vue';
 import IfBinding from '@/views/IfBinding.vue';
 import OnEvent from '@/views/OnEvent.vue';
+import ComputedWatch from '@/views/ComputedWatch.vue';
 
 const routes = [
   {
@@ -40,6 +41,11 @@ const routes = [
     path: '/onEvent',
     name: 'onEvent',
     component: OnEvent,
+  },
+  {
+    path: '/comWatch',
+    name: 'comWatch',
+    component: ComputedWatch,
   },
 ];
 
