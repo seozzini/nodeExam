@@ -5,7 +5,7 @@
     <DefaultHeader />
     <!-- content component -->
     <router-view />
-    <!-- footer component -->
+    <!-- footer component   -->
   </div>
 </template>
 
