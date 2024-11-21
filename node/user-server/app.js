@@ -4,7 +4,7 @@ const app = express();
 const userRouter = require('./router/user_router.js');
 
 //미들웨어
-app.use(express.json()); //applucation/json
+app.use(express.json()); //application/json
 
 //라우터 등록
 app.use('/', userRouter); //수정예정
